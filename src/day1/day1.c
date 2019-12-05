@@ -4,7 +4,7 @@
 
 int main() {
   std::ifstream input;
-  input.open("data.txt");
+  input.open("data/data_d1.txt");
 
   double mass = 0;
   int total = 0;
