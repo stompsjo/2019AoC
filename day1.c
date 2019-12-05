@@ -8,8 +8,15 @@ int main() {
 
   double mass = 0;
   int total = 0;
+  double fuel_needed = 0;
   while (input >> mass) {
-    total += floor(mass / 3) - 2;
+    while (mass > 0) {
+      fuel_needed = floor(mass / 3) - 2;
+      if (fuel_needed > 0) {
+        total += fuel_needed;
+      }
+      mass = fuel_needed;
+    }
   }
 
   std::cout << "The total fuel requirement is: " << total << std::endl;
