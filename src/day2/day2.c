@@ -42,13 +42,13 @@ int main() {
   int result = 0;
   for (int noun = 0; noun < 99; noun++) {
     for (int verb = 0; verb < 99; verb++) {
-        result = parse(code, noun, verb);
-        if (result == 19690720) {
-          std::cout << "noun : " << noun << std::endl;
-          std::cout << "verb : " << verb << std::endl;
-          std::cout << "100 * noun + verb : " << 100 * noun + verb << std::endl;
-          return 0;
-        }
+      result = parse(code, noun, verb);
+      if (result == 19690720) {
+        std::cout << "noun : " << noun << std::endl;
+        std::cout << "verb : " << verb << std::endl;
+        std::cout << "100 * noun + verb : " << 100 * noun + verb << std::endl;
+        return 0;
+      }
     }
   }
 
